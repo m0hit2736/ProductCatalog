@@ -1,0 +1,62 @@
+extend type Query {
+  getProductDetails(pdId:ID!):ProductDetails
+  getAllProductDetails:[ProductDetails]
+}
+
+extend type Mutation {
+  addProductDetails(productDetails: ProductDetailsInput!): ProductDetails
+  updateProductDetails(productDetails: ProductDetailsUInput!): ProductDetails!
+  deleteProductDetails(productCode:ID!):String
+}
+
+type ProductDetails {
+
+
+  pdId: ID!
+  brand: String
+  price: Float!
+  color: String
+  size: String!
+  discount: Float!
+  category: String
+  shortDescription:String
+  
+}
+
+type DeliveryDetails{
+pinCode:ID!
+estimateDays:String!
+}
+
+input DeliveryDetailsInput{
+pinCode:ID!
+}
+
+input ProductInputVal{
+	productCode:ID!
+}
+
+input ProductDetailsInput {
+   brand: String
+  price: Float!
+  color: String
+  size: String!
+  discount: Float!
+  category: String
+  shortDescription:String
+  product: ProductInputVal!
+  deliveryDetails:DeliveryDetailsInput!
+}
+
+input ProductDetailsUInput {
+	pdId:ID!
+  brand: String
+  price: Float!
+  color: String
+  size: String!
+  discount: Float!
+  category: String
+  shortDescription:String
+  product: ProductInputVal!
+  deliveryDetails:DeliveryDetailsInput!
+}
