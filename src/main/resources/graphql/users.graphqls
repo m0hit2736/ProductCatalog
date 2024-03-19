@@ -1,0 +1,21 @@
+
+extend type Query {
+getUser(userId:ID!):Users
+}
+
+extend type Mutation {
+addUser(customer: UserInput!): Users
+}
+
+type Users {
+  userId: ID! 
+  userName: String!
+  userEmail:String
+}
+
+input UserInput {
+
+  userName: String! 
+  userEmail:String! 
+  userPswd:String!
+}

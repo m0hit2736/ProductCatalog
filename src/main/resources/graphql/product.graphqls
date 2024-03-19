@@ -1,0 +1,24 @@
+type Query {
+  getProduct(productCode:ID!):Product
+  getAllProduct:[Product]
+}
+
+type Mutation {
+  addProduct(product: ProductInput!): Product
+  updateProduct(product: ProductUInput!): Product!
+  deleteProduct(productCode:ID!):String
+}
+
+type Product {
+  productCode: ID!
+  productName: String!
+}
+
+input ProductInput {
+  productName: String!
+}
+
+input ProductUInput {
+	productCode:ID!
+  productName: String!
+}
