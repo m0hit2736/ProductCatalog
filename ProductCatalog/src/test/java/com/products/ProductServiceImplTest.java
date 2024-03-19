@@ -32,4 +32,13 @@ class ProductServiceImplTest {
 		assertEquals(Optional.of(product), productServiceImpl.getProductByCode(1));
 		log.info("Test Case ran successfully");
 	}
+
+	@Test
+	void testAddProduct() {
+		Product product = new Product();
+		product.setProductCode(1);
+		product.setProductName("cell phone");
+		when(dao.save(any(Product.class))).thenReturn(product);
+		assertEquals(product, productServiceImpl.addProduct(product));
+	}
 }
