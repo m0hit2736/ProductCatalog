@@ -40,6 +40,15 @@ class ProductServiceImplTest {
 	}
 
 	@Test
+	void testAddProduct1() {
+		Product product = new Product();
+		product.setProductCode(1);
+		product.setProductName("cell phone");
+		when(dao.save(any(Product.class))).thenReturn(product);
+		assertEquals(product, productServiceImpl.addProduct(product));
+	}
+
+	@Test
 	void testUpdateProduct() {
 		Product product = new Product();
 		product.setProductCode(1);
