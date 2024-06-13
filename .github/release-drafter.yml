@@ -23,17 +23,17 @@ template: |
   ### Release Date
   _Released on $DATE_
 
-  Features
-  $CHANGES
+  ## Features
+  $FEATURES
 
-  Bug Fixes
-  $CHANGES
+  ## Bug Fixes
+  $BUG_FIXES
 
-  Maintenance
-  $CHANGES
+  ## Maintenance
+  $MAINTENANCE
 
-  Documentation
-  $CHANGES
+  ## Documentation
+  $DOCUMENTATION
 
   ## Contributors
   Thank you to all the contributors who made this release possible:
@@ -44,4 +44,3 @@ template: |
   - [Full changelog](https://github.com/$OWNER/$REPO/releases/tag/$NEW_TAG)
 
   <!-- Optional: Include other metadata if necessary -->
-
