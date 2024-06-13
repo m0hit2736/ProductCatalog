@@ -23,17 +23,17 @@ template: |
   ### Release Date
   _Released on $DATE_
 
-  ## Features
-  $FEATURES
+  ### Features
+  $CHANGES
 
-  ## Bug Fixes
-  $BUG_FIXES
+  ### Bug Fixes
+  $CHANGES
 
-  ## Maintenance
-  $MAINTENANCE
+  ### Maintenance
+  $CHANGES
 
-  ## Documentation
-  $DOCUMENTATION
+  ### Documentation
+  $CHANGES
 
   ## Contributors
   Thank you to all the contributors who made this release possible:
