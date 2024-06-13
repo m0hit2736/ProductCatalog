@@ -8,10 +8,40 @@ categories:
   - title: '🐛 Bug Fixes'
     labels:
       - 'bug'
+  - title: '🔧 Maintenance'
+    labels:
+      - 'maintenance'
+  - title: '📚 Documentation'
+    labels:
+      - 'documentation'
 
 change-template: '- $TITLE (#$NUMBER) by @$AUTHOR'
 
 template: |
-  ## What's new in this release !!
+  ## What's new in v$NEXT_PATCH_VERSION
 
+  ### Release Date
+  _Released on $DATE_
+
+  ### 🚀 Features
   $CHANGES
+
+  ### 🐛 Bug Fixes
+  $CHANGES
+
+  ### 🔧 Maintenance
+  $CHANGES
+
+  ### 📚 Documentation
+  $CHANGES
+
+  ## Contributors
+  Thank you to all the contributors who made this release possible:
+  $CONTRIBUTORS
+
+  ## Links
+  - [Compare changes](https://github.com/$OWNER/$REPO/compare/$PREVIOUS_TAG...$NEW_TAG)
+  - [Full changelog](https://github.com/$OWNER/$REPO/releases/tag/$NEW_TAG)
+
+  <!-- Optional: Include other metadata if necessary -->
+
