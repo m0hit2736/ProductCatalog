@@ -22,19 +22,9 @@ template: |
 
   ### Release Date
   _Released on $DATE_
-
-  ### Features
+  
   $CHANGES
-
-  ### Bug Fixes
-  $CHANGES
-
-  ### Maintenance
-  $CHANGES
-
-  ### Documentation
-  $CHANGES
-
+  
   ## Contributors
   Thank you to all the contributors who made this release possible:
   $CONTRIBUTORS
