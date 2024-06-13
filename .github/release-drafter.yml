@@ -21,7 +21,7 @@ template: |
   ## What's new in v$NEXT_PATCH_VERSION
 
   ### Release Date
-  _Released on $DATE_
+  _Released on $(date +"%Y-%m-%d %H:%M:%S")_
   
   $CHANGES
   
